@@ -11,11 +11,11 @@ public class Main {
     }
     public static void main(String[] args) {
         String operacija;
-        System.out.printf("Unesite operaciju ('plus' za sabiranje, 'podijeljeno' za dijeljenje):");
+        System.out.println("Unesite operaciju ('plus' za sabiranje, 'podijeljeno' za dijeljenje):");
         Scanner input = new Scanner(System.in);
         operacija = input.nextLine();
         ArrayList<Double> brojevi = new ArrayList<>();
-        System.out.printf("Unesite brojeve: ");
+        System.out.println("Unesite brojeve: ");
         double broj;
         do {
             broj = input.nextDouble();
