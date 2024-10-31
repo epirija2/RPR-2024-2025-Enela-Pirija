@@ -93,8 +93,7 @@ public class Student {
     }
 
     Double Prosjek() throws DijeljenjeSNulomException {
-        if (ocjene.isEmpty()) throw new DijeljenjeSNulomException("Student nema nijednu unesenu ocjenu! " +
-                "Nije moguce ispisati podatke.");
+        if (ocjene.isEmpty()) throw new DijeljenjeSNulomException("Student nema nijednu unesenu ocjenu!");
         Double prosjek = 0.0;
         for (Integer ocjena : ocjene)
             prosjek += ocjena;
@@ -106,7 +105,7 @@ public class Student {
             return "Klase.Student: " + ime + " " + prezime + ", broj indeksa: " +
                     brojIndeksa + ", prosjek: " + Prosjek();
         } catch(DijeljenjeSNulomException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e.getMessage() + " Nije moguce ispisati podatke.");
             return "";
         }
     }
