@@ -1,0 +1,3 @@
+Razvoj programskih rjesenja,5.0
+Osnove baza podataka,5.0
+Diskretna matematika,5.0
